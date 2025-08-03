@@ -55,17 +55,17 @@ public class Verify extends javax.swing.JFrame {
         getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, 220, -1));
         getContentPane().add(txtnum3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 190, 220, -1));
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setText("Rizal");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, -1, -1));
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setText("Pe");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, -1, -1));
 
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("Info");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, -1, -1));
 
-        jLabel4.setText("jLabel4");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 240, -1, -1));
+        jLabel4.setText("Dts");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 230, -1, -1));
         getContentPane().add(txtnum4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, 220, -1));
 
         jButton2.setText("AVERAGE");
