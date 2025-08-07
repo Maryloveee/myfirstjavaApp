@@ -38,10 +38,10 @@ public class Cafeteria extends javax.swing.JFrame {
         txt2 = new javax.swing.JTextField();
         txt3 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        txtquan = new javax.swing.JTextField();
+        txt4 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txt5 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -79,7 +79,7 @@ public class Cafeteria extends javax.swing.JFrame {
 
         jLabel6.setText("Quantity");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, -1, -1));
-        getContentPane().add(txtquan, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 190, -1));
+        getContentPane().add(txt4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 190, -1));
 
         jButton2.setText("Check");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -91,9 +91,14 @@ public class Cafeteria extends javax.swing.JFrame {
 
         jLabel7.setText("Cash");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, -1));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, 190, -1));
+        getContentPane().add(txt5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, 190, -1));
 
         jButton3.setText("Order");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 430, -1, -1));
 
         pack();
@@ -101,22 +106,80 @@ public class Cafeteria extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        int opt = Integer.parseInt(txt1.getText());
-        if(opt==1)
-        {
-        JOptionPane.showMessageDialog(null, "Hotdog", "Act1A", JOptionPane.INFORMATION_MESSAGE);
-        }
-        
+       int opt = Integer.parseInt(txt1.getText());
+       if (opt == 1)
+       {
+           JOptionPane.showMessageDialog(null, "Hotdog");
+           txt2.setText("Hotdog");
+           txt3.setText("10 pesos");
+       }
+       if (opt == 2)
+       {
+        JOptionPane.showMessageDialog(null, "Siopao");
+        txt2.setText("Siopao");
+        txt3.setText("7pesos");
+       }
+       
       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        int hotdog = 10 ;
-        int quan = Integer.parseInt(txtquan.getText());
-        int quan1 = hotdog * quan;
-        JOptionPane.showMessageDialog(null, "your total is: + quan1", "Act1A", JOptionPane.INFORMATION_MESSAGE);
+     
+        String item = txt2.getText();
+        String numtext = txt5.getText();
+        
+        if (numtext.isEmpty())
+        {
+          JOptionPane.showMessageDialog(null, "Amount is invalid");
+        }
+        
+        int num = Integer.parseInt(txt5.getText());
+        
+        if ("Hotdog".equals(item))
+        {
+            int hotdog = 10;
+            int quan = Integer.parseInt(txt4.getText());
+            int quan1 = hotdog * quan;
+            JOptionPane.showMessageDialog(null, "Your change is:" + quan1);
+            int change = num - quan1;
+            JOptionPane.showMessageDialog(null, "Your change:" + change);
+        }
+        if ("Siopao".equals(item))
+        {
+            int siopao = 10;
+            int quan = Integer.parseInt(txt4.getText());
+            int quan1 = siopao * quan;
+            JOptionPane.showMessageDialog(null, "Your change is:" + quan1);
+            int change = num - quan1;
+            JOptionPane.showMessageDialog(null, "Your change:" + change);
+        }    
+        
+        
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       String item = txt2.getText();
+       
+       int num = Integer.parseInt(txt5.getText());
+       
+       if ("Hotdog".equals(item))
+       {
+       int siopao = 7;
+       int quan = Integer.parseInt(txt4.getText());
+       int quan1 = siopao * quan;
+       int change = num - quan1;
+       JOptionPane.showMessageDialog(null, "Item: " + item +
+             "\nQuantity:" + quan +
+             "\nQuantity:" + quan +
+             "\nChange:" + change);
+       txt1.setText("");
+       txt2.setText("");
+       txt3.setText("");
+       txt4.setText("");
+       txt5.setText("");
+       }
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,10 +227,10 @@ public class Cafeteria extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField txt1;
     private javax.swing.JTextField txt2;
     private javax.swing.JTextField txt3;
-    private javax.swing.JTextField txtquan;
+    private javax.swing.JTextField txt4;
+    private javax.swing.JTextField txt5;
     // End of variables declaration//GEN-END:variables
 }
