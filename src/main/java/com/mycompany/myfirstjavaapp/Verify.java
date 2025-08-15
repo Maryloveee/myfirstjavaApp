@@ -80,16 +80,7 @@ public class Verify extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        int num1 = Integer.parseInt(txt1.getText());
-        if (num1>18 && num1 <= 100) 
-        {
-          JOptionPane.showMessageDialog(null, "Able to Vote", "Mingshawn", JOptionPane.INFORMATION_MESSAGE);
-        }
-        else if (num1<=17 && num1 >=5)
-        {
-          JOptionPane.showMessageDialog(null, "Unable to vote", "Mingshawn", JOptionPane.INFORMATION_MESSAGE);
-        }
+     
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
