@@ -48,7 +48,7 @@ public class Cafeteria {
 
                     System.out.printf("Quantity: %d\n", quan);
                     System.out.printf("Subtotal: %.2f\n", (double) subtotal);
-                    System.out.printf("VAT (12%%): %.2f\n", vat);
+                    System.out.printf("Tax (12%%): %.2f\n", vat);
                     System.out.printf("Total: %.2f\n", total);
 
                     System.out.print("Enter your cash: ");
@@ -73,7 +73,7 @@ public class Cafeteria {
 
                     System.out.printf("Quantity: %d\n", quan);
                     System.out.printf("Subtotal: %.2f\n", (double) subtotal);
-                    System.out.printf("VAT (12%%): %.2f\n", vat);
+                    System.out.printf("Tax (12%%): %.2f\n", vat);
                     System.out.printf("Total: %.2f\n", total);
 
                     System.out.print("Enter your cash: ");
@@ -110,7 +110,7 @@ public class Cafeteria {
 
                     System.out.printf("Quantity: %d\n", quan);
                     System.out.printf("Subtotal: %.2f\n", (double) subtotal);
-                    System.out.printf("VAT (12%%): %.2f\n", vat);
+                    System.out.printf("Tax (12%%): %.2f\n", vat);
                     System.out.printf("Total: %.2f\n", total);
 
                     System.out.print("Enter your cash: ");
@@ -135,7 +135,7 @@ public class Cafeteria {
 
                     System.out.printf("Quantity: %d\n", quan);
                     System.out.printf("Subtotal: %.2f\n", (double) subtotal);
-                    System.out.printf("VAT (12%%): %.2f\n", vat);
+                    System.out.printf("Tax (12%%): %.2f\n", vat);
                     System.out.printf("Total: %.2f\n", total);
 
                     System.out.print("Enter your cash: ");
